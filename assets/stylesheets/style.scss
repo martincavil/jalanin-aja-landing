@@ -1,14 +1,44 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: #000;
+  color: #fff;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 50px;
+
+  > .nav-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  > .nav-center {
+
+  }
+
+  > .nav-right {
+    > .menu-line {
+      width: 4rem;
+      color: white;
+      height: 5px;
+      border: 1px solid white;
+    }
+  }
 }
