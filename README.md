@@ -14,3 +14,4 @@ To Do :
 - Add a footer
 - Add some animations on texts and images
 - Add a cursor effect with round follower and some effects on text/image hover
+- Organize scss with components
