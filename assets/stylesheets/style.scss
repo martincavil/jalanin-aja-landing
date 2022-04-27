@@ -9,7 +9,7 @@ body {
   color: #fff;
   font-family: 'Monrope', sans-serif;
 }
-h1, h2, h3, h4, h5, p, span, a {
+h1, h2, h3, h4, h5, p, span, a, br {
   margin: 0;
   padding: 0;
 
@@ -34,7 +34,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem;
+  padding: 3rem 6rem;
 
   > .nav-left {
     display: flex;
@@ -42,19 +42,25 @@ nav {
     justify-content: space-between;
     width: 3rem;
 
+
     > :nth-child(1){
-      margin-right: 3rem;
+      margin-right: 5rem;
 
 
     }
     li {
       margin: 0.25rem;
+      opacity: 0.8;
+
+      &:hover {
+        opacity: 1;
+      }
     }
   }
 
   > .nav-center {
     > span {
-      font-size: 1.5rem;
+      font-size: 2rem;
     }
   }
 
@@ -80,30 +86,26 @@ nav {
   align-items: flex-end;
   justify-content: space-between;
   position: relative;
-  margin: 3rem;
+  margin: 10rem 6rem;
+  height: 8rem;
 
 
   > .hero-left {
-    width: 70%;
+    width: 66%;
 
     > h2 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
       font-weight: 500;
+      margin-bottom: 12rem;
     }
 
-    > h1 {
-      font-size: 10rem;
-      line-height: 0.8;
-      margin-top: 2rem;
-      margin-left: 1rem;
-      letter-spacing: -0.6rem;
-      z-index: 2;
-    }
   }
 
   > .hero-right {
-    width: 30%;
-
+    width: 34%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
 
     // .arrow-up-right {
     //   position: relative;
@@ -131,11 +133,13 @@ nav {
     //   }
     // }
 
-    > p{
+    > p {
       text-transform: uppercase;
       line-height: 1.8;
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 1.25rem;
+      margin-bottom: -9rem;
+
     }
   }
 
@@ -159,6 +163,18 @@ nav {
   background-position: center;
   background-size: 100%;
   position: relative;
+
+  > h1 {
+    font-size: 14rem;
+    line-height: 0.8;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    letter-spacing: -0.6rem;
+    z-index: 2;
+    position: absolute;
+    top: -20rem;
+    left: 5rem;
+  }
 
   > span {
     position: absolute;
