@@ -1,5 +1,7 @@
+// Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
 
+// Generic style
 body {
   padding: 0;
   margin: 0;
@@ -7,7 +9,15 @@ body {
   color: #fff;
   font-family: 'Monrope', sans-serif;
 }
+h1, h2, h3, h4, h5, p, span, a {
+  margin: 0;
+  padding: 0;
 
+  &::selection {
+    background-color: white;
+    color: black;
+  }
+}
 a {
   text-decoration: none;
   color: #fff;
@@ -19,12 +29,12 @@ ul, li {
   list-style: none;
 }
 
-
+// Navbar begin
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 1.5rem;
+  padding: 3rem;
 
   > .nav-left {
     display: flex;
@@ -62,3 +72,98 @@ nav {
     }
   }
 }
+// Nabvar end
+
+// Hero begin
+.hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem;
+
+
+  > .hero-left {
+    width: 70%;
+
+    > h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    > h1 {
+      font-size: 10rem;
+      line-height: 0.8;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      letter-spacing: -0.6rem;
+      z-index: 2;
+    }
+  }
+
+  > .hero-right {
+    width: 30%;
+
+
+    // .arrow-up-right {
+    //   position: relative;
+    //   justify-content: flex-end;
+
+    //   > .arrow-square {
+    //     border: solid white;
+    //     border-width: 1rem 1rem 0 0;
+    //     padding: 2rem;
+    //     width: 1rem;
+
+
+    //   }
+    //   > .arrow-line {
+    //     padding: 1rem;
+    //     width: 4rem;
+    //     border: solid white;
+    //     border-width: 1rem 0 0 0;
+    //     transform: rotate(-45deg);
+    //     position: absolute;
+    //     top: 2rem;
+    //     right: 10.75rem;
+
+
+    //   }
+    // }
+
+    > p{
+      text-transform: uppercase;
+      line-height: 1.8;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+  }
+
+
+}
+// Hero end
+
+// Image home
+.bg-image {
+
+  background-image:
+    linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),
+    url("/assets/images/hero-bg.jpg")
+    ;
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  background-size: auto;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative;
+
+  > span {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem;
+  }
+}
+// Image home end
