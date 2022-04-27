@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
 body {
   padding: 0;
   margin: 0;
   background-color: #000;
   color: #fff;
+  font-family: 'Monrope', sans-serif;
 }
 
 a {
@@ -21,24 +24,41 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 80px 50px;
+  padding: 3rem 1.5rem;
 
   > .nav-left {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 3rem;
+
+    > :nth-child(1){
+      margin-right: 3rem;
+
+
+    }
+    li {
+      margin: 0.25rem;
+    }
   }
 
   > .nav-center {
-
+    > span {
+      font-size: 1.5rem;
+    }
   }
 
   > .nav-right {
+    justify-content: space-between;
+    align-items: center;
+
     > .menu-line {
-      width: 4rem;
+      width: 3rem;
       color: white;
-      height: 5px;
-      border: 1px solid white;
+      height: 0.2rem;
+      background-color: #fff;
+      margin: 0.4rem 0;
+      border-radius: 2px;
     }
   }
 }
