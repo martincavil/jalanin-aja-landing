@@ -96,7 +96,7 @@ nav {
     > h2 {
       font-size: 1.75rem;
       font-weight: 500;
-      margin-bottom: 12rem;
+      margin-bottom: 10rem;
     }
 
   }
@@ -107,7 +107,7 @@ nav {
     align-items: flex-end;
     justify-content: flex-end;
 
-    // .arrow-up-right {
+    // .arrow {
     //   position: relative;
     //   justify-content: flex-end;
 
@@ -156,7 +156,7 @@ nav {
     ;
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 1000px;
   background-size: auto;
   object-fit: contain;
   background-repeat: no-repeat;
@@ -183,3 +183,90 @@ nav {
   }
 }
 // Image home end
+
+// Section 2 begin
+.section-2 {
+  align-items: center;
+  margin: 3rem 6rem;
+
+  > h3 {
+    font-size: 7rem;
+    font-weight: 500;
+    text-align: center;
+    > span {
+      padding-left: 10.5rem;
+    }
+  }
+
+  > .text-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem;
+    > p {
+      text-transform: uppercase;
+      line-height: 1.8;
+      margin: 0;
+      font-size: 1.2rem;
+      width: 30%;
+
+    }
+  }
+}
+// Section 2 end
+
+.section-3 {
+  align-items: center;
+  margin: 3rem 6rem;
+  > .big-text {
+    width: 100%;
+    font-size: 6rem;
+    text-align: right;
+    font-weight: 600;
+    letter-spacing: -0.4rem;
+    > span {
+
+      font-size: 13rem;
+    }
+  }
+
+  .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
+    > .destination {
+
+      > .destination-image {
+      background-image: url('/assets/images/acores.jpg');
+      width: 400px;
+      height: 300px;
+      background-size: 100%;
+      background-position: center;
+      object-fit: contain;
+      background-repeat: no-repeat;
+      margin: 0.5rem;
+      }
+      > .destination-desc {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        > h4 {
+          font-size: 3rem;
+          width: 50%;
+          text-transform: uppercase;
+        }
+
+        > span {
+          text-transform: uppercase;
+          width: 50%;
+          font-size: 0.75rem;
+        }
+      }
+    }
+  }
+}

@@ -64,7 +64,7 @@ nav {
     .hero > .hero-left > h2 {
       font-size: 1.75rem;
       font-weight: 500;
-      margin-bottom: 12rem; }
+      margin-bottom: 10rem; }
   .hero > .hero-right {
     width: 34%;
     display: flex;
@@ -81,7 +81,7 @@ nav {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/assets/images/hero-bg.jpg");
   margin: 0;
   padding: 0;
-  height: 800px;
+  height: 1000px;
   background-size: auto;
   object-fit: contain;
   background-repeat: no-repeat;
@@ -102,3 +102,64 @@ nav {
     position: absolute;
     bottom: 2rem;
     left: 2rem; }
+
+.section-2 {
+  align-items: center;
+  margin: 3rem 6rem; }
+  .section-2 > h3 {
+    font-size: 7rem;
+    font-weight: 500;
+    text-align: center; }
+    .section-2 > h3 > span {
+      padding-left: 10.5rem; }
+  .section-2 > .text-desc {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 3rem; }
+    .section-2 > .text-desc > p {
+      text-transform: uppercase;
+      line-height: 1.8;
+      margin: 0;
+      font-size: 1.2rem;
+      width: 30%; }
+
+.section-3 {
+  align-items: center;
+  margin: 3rem 6rem; }
+  .section-3 > .big-text {
+    width: 100%;
+    font-size: 6rem;
+    text-align: right;
+    font-weight: 600;
+    letter-spacing: -0.4rem; }
+    .section-3 > .big-text > span {
+      font-size: 13rem; }
+  .section-3 .carousel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0; }
+    .section-3 .carousel > .destination > .destination-image {
+      background-image: url("/assets/images/acores.jpg");
+      width: 400px;
+      height: 300px;
+      background-size: 100%;
+      background-position: center;
+      object-fit: contain;
+      background-repeat: no-repeat;
+      margin: 0.5rem; }
+    .section-3 .carousel > .destination > .destination-desc {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between; }
+      .section-3 .carousel > .destination > .destination-desc > h4 {
+        font-size: 3rem;
+        width: 50%;
+        text-transform: uppercase; }
+      .section-3 .carousel > .destination > .destination-desc > span {
+        text-transform: uppercase;
+        width: 50%;
+        font-size: 0.75rem; }
