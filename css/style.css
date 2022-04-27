@@ -6,6 +6,13 @@ body {
   color: #fff;
   font-family: 'Monrope', sans-serif; }
 
+h1, h2, h3, h4, h5, p, span, a {
+  margin: 0;
+  padding: 0; }
+  h1::selection, h2::selection, h3::selection, h4::selection, h5::selection, p::selection, span::selection, a::selection {
+    background-color: white;
+    color: black; }
+
 a {
   text-decoration: none;
   color: #fff; }
@@ -19,7 +26,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3rem 1.5rem; }
+  padding: 3rem; }
   nav > .nav-left {
     display: flex;
     align-items: center;
@@ -41,3 +48,45 @@ nav {
       background-color: #fff;
       margin: 0.4rem 0;
       border-radius: 2px; }
+
+.hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  position: relative;
+  margin: 3rem; }
+  .hero > .hero-left {
+    width: 70%; }
+    .hero > .hero-left > h2 {
+      font-size: 1.5rem;
+      font-weight: 500; }
+    .hero > .hero-left > h1 {
+      font-size: 10rem;
+      line-height: 0.8;
+      margin-top: 2rem;
+      margin-left: 1rem;
+      letter-spacing: -0.6rem;
+      z-index: 2; }
+  .hero > .hero-right {
+    width: 30%; }
+    .hero > .hero-right > p {
+      text-transform: uppercase;
+      line-height: 1.8;
+      margin: 0;
+      font-size: 0.9rem; }
+
+.bg-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/assets/images/hero-bg.jpg");
+  margin: 0;
+  padding: 0;
+  height: 800px;
+  background-size: auto;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  position: relative; }
+  .bg-image > span {
+    position: absolute;
+    bottom: 2rem;
+    left: 2rem; }
