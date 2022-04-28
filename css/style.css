@@ -4,7 +4,8 @@ body {
   margin: 0;
   background-color: #000;
   color: #fff;
-  font-family: 'Monrope', sans-serif; }
+  font-family: 'Monrope', sans-serif;
+  cursor: point; }
 
 h1, h2, h3, h4, h5, p, span, a, br {
   margin: 0;
@@ -39,8 +40,20 @@ nav {
       opacity: 0.8; }
       nav > .nav-left li:hover {
         opacity: 1; }
-  nav > .nav-center > span {
-    font-size: 2rem; }
+  nav > .logo {
+    position: relative; }
+    nav > .logo > span {
+      font-size: 2rem;
+      letter-spacing: -0.2rem; }
+    nav > .logo > #logo-round {
+      border: 1px solid #fff;
+      padding: 1rem 4.5rem;
+      border-radius: 50%;
+      transform: rotate(170deg);
+      position: absolute;
+      top: 0;
+      left: -0.5rem;
+      right: 1rem; }
   nav > .nav-right {
     justify-content: space-between;
     align-items: center; }
