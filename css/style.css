@@ -5,7 +5,7 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Monrope', sans-serif;
-  cursor: point; }
+  cursor: none; }
 
 h1, h2, h3, h4, h5, p, span, a, br {
   margin: 0;
@@ -16,12 +16,32 @@ h1, h2, h3, h4, h5, p, span, a, br {
 
 a {
   text-decoration: none;
-  color: #fff; }
+  color: #fff;
+  cursor: none; }
 
 ul, li {
   margin: 0;
   padding: 0;
   list-style: none; }
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  border: solid 1px #fff;
+  border-radius: 50%;
+  position: absolute; }
+
+@keyframes cursorClick {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(3); }
+  100% {
+    transform: scale(1);
+    opacity: 0; } }
+
+.expand {
+  animation: cursorClick .5s; }
 
 nav {
   display: flex;
