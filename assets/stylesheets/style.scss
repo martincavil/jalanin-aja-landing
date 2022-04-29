@@ -225,6 +225,7 @@ nav {
 .section-2 {
   align-items: center;
   margin: 3rem 6rem;
+  margin-bottom: 10rem;
 
   > h3 {
     width: 100%;
@@ -292,14 +293,22 @@ nav {
 
   > .section-3-h2 {
     width: 100%;
-    font-size: 6rem;
     text-align: center;
-    font-weight: 600;
-    letter-spacing: -0.4rem;
     margin: 3rem auto;
+    position: relative;
+
+    > :nth-child(1) {
+      font-size: 6rem;
+      font-weight: 600;
+      letter-spacing: -0.4rem;
+      position: absolute;
+      right: 3rem;
+      top: -3rem;
+    }
 
     > .big-text {
-      font-size: 10rem;
+      font-size: 12rem;
+      width: 100%;
     }
   }
 
@@ -317,20 +326,25 @@ nav {
       margin: 0 0.5rem;
 
       > .destination-image {
-          background-image: url('/assets/images/acores.jpg');
-          filter: grayscale(70%);
           height: 300px;
+          width: 100%;
           background-size: 100%;
           background-position: center;
           object-fit: cover;
           background-repeat: no-repeat;
-          transition: background-size ease-in-out 1.5s;
-          overflow: hidden;
+      }
 
-          &:hover {
-            filter: grayscale(0%);
-            background-size: 120%;
-            }
+     #acores {
+        background-image: linear-gradient((rgba(0,0,0,0.7)),(rgba(0,0,0,0.7))), url('/assets/images/acores.jpg');
+      }
+
+      #santa-catalina {
+        background-image: url('/assets/images/santa-catalina.jpg');
+
+      }
+
+      #granada {
+        background-image: linear-gradient((rgba(0,0,0,0.7)),(rgba(0,0,0,0.7))), url('/assets/images/granada.jpg');
       }
 
       > .destination-desc {
