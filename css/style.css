@@ -41,7 +41,7 @@ ul, li {
     opacity: 0; } }
 
 .expand {
-  animation: cursorClick .5s; }
+  animation: cursorClick .4s; }
 
 nav {
   display: flex;
@@ -142,7 +142,7 @@ nav {
     line-height: 0.8;
     margin-top: 4rem;
     margin-left: 1rem;
-    letter-spacing: -0.6rem;
+    letter-spacing: -1rem;
     z-index: 2;
     position: absolute;
     top: -20rem;
@@ -216,7 +216,7 @@ nav {
       right: 3rem;
       top: -3rem; }
     .section-3 > .section-3-h2 > .big-text {
-      font-size: 12rem;
+      font-size: 12.5rem;
       width: 100%; }
   .section-3 .carousel {
     display: flex;
@@ -253,6 +253,6 @@ nav {
           line-height: 1; }
         .section-3 .carousel > .destination > .destination-desc > span {
           text-transform: uppercase;
-          width: 40%;
+          width: 45%;
           font-size: 0.7rem;
           text-align: right; }
