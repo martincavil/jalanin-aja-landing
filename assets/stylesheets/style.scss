@@ -304,6 +304,7 @@ nav {
 
 .section-3 {
   align-items: center;
+  margin: 0 3rem;
 
   > .section-3-h2 {
     width: 100%;
@@ -315,14 +316,11 @@ nav {
       font-size: 6rem;
       font-weight: 600;
       letter-spacing: -0.4rem;
-      position: absolute;
-      right: 3rem;
-      top: -3rem;
     }
 
     > .big-text {
-      font-size: 12.5rem;
-      width: 100%;
+      font-size: 10rem;
+
     }
   }
 
@@ -330,18 +328,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    max-width: 100%;
     place-content: center;
+
 
     > .destination {
       height: 500px;
-      width: 500px;
+      width: 30%;
       overflow: hidden;
       margin: 0 0.5rem;
 
+
       > .destination-image {
           height: 300px;
-          width: 100%;
           background-size: 100%;
           background-position: center;
           object-fit: cover;
