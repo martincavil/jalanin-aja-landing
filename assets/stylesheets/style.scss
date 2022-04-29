@@ -150,6 +150,7 @@ nav {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    position: relative;
 
     > p {
       text-transform: uppercase;
@@ -160,6 +161,25 @@ nav {
     }
   }
 
+  .arrow {
+    position: absolute;
+    top: -8rem;
+    .arrow-line {
+      padding: 0.5rem;
+      width: 4rem;
+      background-color: white;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 32px;
+    }
+
+    .arrow-square {
+      border-top: 1rem solid white;
+      border-right: 1rem solid white;
+      padding: 2rem;
+      position:relative;
+    }
+  }
 
 }
 // Hero end
@@ -233,13 +253,35 @@ nav {
     justify-content: space-between;
     width: 100%;
     margin-top: 3rem;
+    position: relative;
     > p {
       text-transform: uppercase;
       line-height: 1.8;
       margin: 0;
       font-size: 1.2rem;
-      width: 30%;
+      width: 40%;
 
+    }
+  }
+  .arrow2{
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    transform: rotate(90deg);
+    .arrow2-line {
+      padding: 0.5rem;
+      width: 4rem;
+      background-color: white;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 32px;
+    }
+
+    .arrow2-square {
+      border-top: 1rem solid white;
+      border-right: 1rem solid white;
+      padding: 2rem;
+      position:relative;
     }
   }
 }
