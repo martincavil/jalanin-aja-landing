@@ -31,7 +31,9 @@ ul, li {
   list-style: none;
 }
 
-//
+// Generic style end
+
+// Cursor
 .cursor {
   width: 40px;
   height: 40px;
@@ -54,9 +56,9 @@ ul, li {
   }
 }
 .expand {
-  animation: cursorClick .5s;
+  animation: cursorClick .4s;
 }
-//
+// Cursor end
 
 // Navbar begin
 nav {
@@ -206,12 +208,24 @@ nav {
     line-height: 0.8;
     margin-top: 4rem;
     margin-left: 1rem;
-    letter-spacing: -0.6rem;
+    letter-spacing: -1rem;
     z-index: 2;
     position: absolute;
     top: -20rem;
     left: 5rem;
+    // animation: textDisplay 10s;
   }
+
+  // @keyframes textDisplay {
+  //   0% {
+  //     opacity: 0;
+
+  //   }
+
+  //   100% {
+  //     opacity: 1;
+  //   }
+  // }
 
   > span {
     position: absolute;
@@ -307,7 +321,7 @@ nav {
     }
 
     > .big-text {
-      font-size: 12rem;
+      font-size: 12.5rem;
       width: 100%;
     }
   }
@@ -340,7 +354,6 @@ nav {
 
       #santa-catalina {
         background-image: url('/assets/images/santa-catalina.jpg');
-
       }
 
       #granada {
@@ -362,7 +375,7 @@ nav {
 
         > span {
           text-transform: uppercase;
-          width: 40%;
+          width: 45%;
           font-size: 0.7rem;
           text-align: right;
         }
