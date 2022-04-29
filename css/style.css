@@ -102,13 +102,29 @@ nav {
     width: 34%;
     display: flex;
     align-items: flex-end;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    position: relative; }
     .hero > .hero-right > p {
       text-transform: uppercase;
       line-height: 1.8;
       margin: 0;
       font-size: 1.2rem;
       margin-bottom: -9rem; }
+  .hero .arrow {
+    position: absolute;
+    top: -8rem; }
+    .hero .arrow .arrow-line {
+      padding: 0.5rem;
+      width: 4rem;
+      background-color: white;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 32px; }
+    .hero .arrow .arrow-square {
+      border-top: 1rem solid white;
+      border-right: 1rem solid white;
+      padding: 2rem;
+      position: relative; }
 
 .bg-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("/assets/images/hero-bg.jpg");
@@ -158,13 +174,31 @@ nav {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    position: relative; }
     .section-2 > .text-desc > p {
       text-transform: uppercase;
       line-height: 1.8;
       margin: 0;
       font-size: 1.2rem;
-      width: 30%; }
+      width: 40%; }
+  .section-2 .arrow2 {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    transform: rotate(90deg); }
+    .section-2 .arrow2 .arrow2-line {
+      padding: 0.5rem;
+      width: 4rem;
+      background-color: white;
+      transform: rotate(-45deg);
+      position: absolute;
+      top: 32px; }
+    .section-2 .arrow2 .arrow2-square {
+      border-top: 1rem solid white;
+      border-right: 1rem solid white;
+      padding: 2rem;
+      position: relative; }
 
 .section-3 {
   align-items: center; }
