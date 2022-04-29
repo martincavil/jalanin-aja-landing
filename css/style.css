@@ -154,7 +154,8 @@ nav {
 
 .section-2 {
   align-items: center;
-  margin: 3rem 6rem; }
+  margin: 3rem 6rem;
+  margin-bottom: 10rem; }
   .section-2 > h3 {
     width: 100%;
     font-size: 6.5rem;
@@ -204,13 +205,19 @@ nav {
   align-items: center; }
   .section-3 > .section-3-h2 {
     width: 100%;
-    font-size: 6rem;
     text-align: center;
-    font-weight: 600;
-    letter-spacing: -0.4rem;
-    margin: 3rem auto; }
+    margin: 3rem auto;
+    position: relative; }
+    .section-3 > .section-3-h2 > :nth-child(1) {
+      font-size: 6rem;
+      font-weight: 600;
+      letter-spacing: -0.4rem;
+      position: absolute;
+      right: 3rem;
+      top: -3rem; }
     .section-3 > .section-3-h2 > .big-text {
-      font-size: 10rem; }
+      font-size: 12rem;
+      width: 100%; }
   .section-3 .carousel {
     display: flex;
     align-items: center;
@@ -222,18 +229,18 @@ nav {
       overflow: hidden;
       margin: 0 0.5rem; }
       .section-3 .carousel > .destination > .destination-image {
-        background-image: url("/assets/images/acores.jpg");
-        filter: grayscale(70%);
         height: 300px;
+        width: 100%;
         background-size: 100%;
         background-position: center;
         object-fit: cover;
-        background-repeat: no-repeat;
-        transition: background-size ease-in-out 1.5s;
-        overflow: hidden; }
-        .section-3 .carousel > .destination > .destination-image:hover {
-          filter: grayscale(0%);
-          background-size: 120%; }
+        background-repeat: no-repeat; }
+      .section-3 .carousel > .destination #acores {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/acores.jpg"); }
+      .section-3 .carousel > .destination #santa-catalina {
+        background-image: url("/assets/images/santa-catalina.jpg"); }
+      .section-3 .carousel > .destination #granada {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/assets/images/granada.jpg"); }
       .section-3 .carousel > .destination > .destination-desc {
         display: flex;
         align-items: flex-start;
