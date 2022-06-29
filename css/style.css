@@ -5,7 +5,8 @@ body {
   background-color: #000;
   color: #fff;
   font-family: 'Monrope', sans-serif;
-  cursor: none; }
+  cursor: none;
+  overflow-x: hidden;}
 
 h1, h2, h3, h4, h5, p, span, a, br {
   margin: 0;
